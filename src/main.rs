@@ -47,7 +47,6 @@ fn main() {
     println!("decrypted_message: {}", decrypted);
 
     // Step 9: Verification:
-
     assert_eq!(decrypted, m);
 
 }
