@@ -39,12 +39,16 @@ fn main() {
     println!("m: {}", m);
 
     // Step 7: Encryption:
-    let encrypted = mod_pow(m, e, n.clone());
+    let encrypted = mod_pow(m.clone(), e, n.clone());
     println!("encrypted_message: {}", encrypted);
 
     // Step 8: Decryption:
     let decrypted = mod_pow(encrypted, d, n);
     println!("decrypted_message: {}", decrypted);
+
+    // Step 9: Verification:
+
+    assert_eq!(decrypted, m);
 
 }
 
