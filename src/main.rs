@@ -8,7 +8,6 @@ use glass_pumpkin::prime;
 fn main() {
 
     // Step 1: Choose two prime numbers p and q:
-
     let no_bits=256;
     let  p = BigInt::from_biguint(Sign::Plus,prime::new(no_bits).unwrap());
     let  q = BigInt::from_biguint(Sign::Plus,prime::new(no_bits).unwrap());
