@@ -7,9 +7,7 @@ use glass_pumpkin::prime;
 
 fn main() {
 
-    // Step 1: Choose two prime numbers p and q: 
-    //let p = BigInt::parse_bytes(b"115792089237316195423570985008687907853269984665640564039457584007908834671663", 10).unwrap();
-    //let q = BigInt::parse_bytes(b"17", 10).unwrap();
+    // Step 1: Choose two prime numbers p and q:
 
     let no_bits=256;
     let  p = BigInt::from_biguint(Sign::Plus,prime::new(no_bits).unwrap());
